@@ -1,0 +1,481 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button id="liveViewBtn" class="btn btn-icon btn-3 btn-success" data-toggle="modal" data-target="#liveView" type="button">
+                Live View
+              </button>
+              <div id="liveView" tabindex="-1" role="dialog"  aria-labelledby="liveView" class="modal fade" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                      <h4 id="modal-title-notification" class="modal-title">Live View</h4> 
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span>×</span></button>
+                      </div> 
+                      <div class="modal-body"> 
+                        <div class="row">
+                          <h3>TOOLSCOPE1227</h3>&nbsp;&nbsp;&nbsp;
+                          <button class="btn btn-primary btn-sm align-items-right">Connect via VNC</button>
+                        </div>
+                        <br>
+                            <div class="table-responsive">
+                              <table class="table align-items-center table-flush table-bordered">
+                                <thead class="thead-light">
+                                  <tr>
+                                    <th scope="col">Channel</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Duration</th>
+                                    <th scope="col">Program</th>
+                                    <th scope="col">Alarm</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                  
+                                  <tr>
+                                    <td class="bg-success">
+                                      1
+                                    </td>
+                                    <td class="bg-success">
+                                      PRODUCTION
+                                    </td>
+                                    <td class="bg-success">
+                                      00:00:01 hr
+                                    </td>
+                                    <td class="bg-success">
+                                        Program:007_03_01
+                                     </td>
+                                     <td class="bg-success">
+                                         Off
+                                     </td>
+                                  </tr>
+                                  <tr>
+                                      <td class="bg-danger">
+                                        2
+                                      </td>
+                                      <td class="bg-danger">
+                                        PRODUCTION
+                                      </td>
+                                      <td class="bg-danger">
+                                          00:00:00 hr
+                                      </td>
+                                      <td class="bg-danger">
+                                         Program:007_03_02
+                                      </td>
+                                      <td class="bg-danger">
+                                          On
+                                      </td>
+                                    </tr>
+                                    
+                                </tbody>
+                              </table>
+                            </div> 
+                        
+                      </div> 
+                      <div class="modal-footer">
+                          <button type="button" data-dismiss="modal" class="btn btn-primary"><!----> <!----> <!----> Ok, Got it</button> 
+                          </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+        </div><br>
+      <!-- Card stats -->
+      <!--Row 1-->
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">
+          <div class="card shadow card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <br>
+                <label for="controlChan">Machine Name :&nbsp;&nbsp; </label>
+                <select id="controlChan" class="btn btn-secondary btn-sm">
+                    <option>TOOLSCOPE_240551</option>
+                      <option>TOOLSCOPE_240552</option>
+                      <option>TOOLSCOPE_240553</option>
+                  </select><br><br>
+                  <label for="monitoringChannel">Tool Number &nbsp;&nbsp;&nbsp;:</label>&nbsp;
+                  <select id="monitoringChannel" class="btn btn-secondary btn-sm">
+                            <option>TOOL:7005</option>
+                            <option>TOOL:7006</option>
+                            <option>TOOL:7007</option>
+                    </select>
+                    <br><br>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-xl-4 col-lg-6">
+          <div class="card shadow card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+                <br>
+                <label for="controlChan">Control Channel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;</label>
+                <select id="controlChan" class="btn btn-secondary btn-sm">
+                    <option>1</option>
+                  </select><br><br>
+                  <label for="monitoringChannel">Monitoring Channel : </label>&nbsp;
+                  <select id="monitoringChannel" class="btn btn-secondary btn-sm">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                    </select>
+                    <br><br>
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats shadow mb-4 mb-xl-0">
+            <div class="card-body">
+
+              
+                  
+                   <!-- <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                      </div>
+                      <input class="form-control datepicker" placeholder="Start Date & Time" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" type="text"/>
+                    </div>-->
+                    
+                    
+                  
+                    <div class="form-group datepicker-div-small">
+                        <div class="input-group input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                          </div>
+                          <input class="form-control datepicker" title="Start Date" placeholder="Start Date" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" type="text"/>
+                        </div>
+                      </div>
+
+                      <div class="form-group datepicker-div-small">
+                          <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                            </div>
+                            <input class="form-control datepicker" title="End Date" placeholder="End Date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" type="text"/>
+                          </div>
+                        </div>
+                    
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-6 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              
+              <h2 class="mb-0">Machine Status</h2>
+            </div>
+            <div class="col">
+              <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales"  (click)="data=datasets[0];updateOptions()">
+                  <button class="btn btn-icon btn-3 btn-primary" type="button">
+                    <span class="btn-inner--icon"><i class="ni ni-cloud-upload-96"></i></span>
+                    <span id="showBtn" class="btn-inner--text">Excel</span>
+                  </button>
+                </li>
+                <li class="nav-item" data-toggle="chart" data-target="#chart-sales"  (click)="data=datasets[1];updateOptions()">
+                  <button class="btn btn-icon btn-3 btn-primary" type="button">
+                    <span class="btn-inner--icon"><i class="ni ni-cloud-upload-96"></i></span>
+                    <span class="btn-inner--text">Image</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- Chart -->
+          <div class="chart">
+            <!-- Chart wrapper -->
+            <!--<div id="chart-sales-legend"></div>-->
+            <canvas id="chart-sales" class="chart-canvas"></canvas>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card shadow"> 
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              
+              <h2 class="mb-0">Program Running Time</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- Chart -->
+          <div class="chart">
+            <canvas id="chart-orders" class="chart-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-xl-6 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header bg-transparent border-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="mb-0">Tool Usage</h3>
+            </div>
+            
+          </div>
+        </div>
+         <!-- Projects table -->
+         <div class="chart">
+          <canvas id="tool-usage" class="chart-canvas"></canvas>
+        </div>  
+         </div>
+    </div>
+    <div class="col-xl-6 mb-5 mb-xl-0">
+        <div class="card shadow">
+          <div class="card-header bg-transparent border-0">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="mb-0">Distribution of Tool Change Times per Day</h3>
+              </div>
+              
+            </div>
+          </div>
+           <!-- Projects table -->
+           <div class="chart">
+            <canvas id="tool-change-distribution" class="chart-canvas"></canvas>
+          </div>  
+           </div>
+      </div>
+  </div>
+
+  <div class="row mt-5">
+      <div class="col-xl-12 mb-12 mb-xl-12">
+        <div class="card shadow">
+          <div class="card-header bg-transparent border-0">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="mb-0">Load Factors</h3>
+              </div>
+              
+            </div>
+          </div>
+           <!-- Projects table -->
+           <div class=" row chart">
+            <canvas id="machine-load" class="chart-canvas"></canvas>
+          </div>  
+          <div class="row chart">
+              <div class="col-xl-6 mb-6 mb-xl-6">
+                <canvas id="stand-still" class="chart-canvas"></canvas>
+              </div>
+              <div class="col-xl-6 mb-6 mb-xl-6">
+                  <canvas id="operating-time" class="chart-canvas"></canvas>
+              </div>
+            </div> 
+           </div>
+          </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-xl-6 mb-5 mb-xl-0">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h2 class="mb-0">Mean Tool Lifetime per Second per Station per Machine for Piece Counter</h2>
+                </div>
+                
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <!-- Chart wrapper -->
+                <canvas id="tool-per-piece-counter" class="chart-canvas"></canvas>
+              </div>
+
+              <button id="showDetailsBtn" class="btn btn-icon btn-3 btn-primary" data-toggle="modal" data-target="#modalBoxDiv" type="button">
+                  Show Details
+                </button>
+                <div id="modalBoxDiv" tabindex="-1" role="dialog"  aria-labelledby="modalBoxDiv" class="modal fade" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                        <h6 id="modal-title-notification" class="modal-title">Tool Change Details</h6> 
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span>×</span></button>
+                        </div> 
+                        <div class="modal-body"> 
+                          <label>Lifetime Max : 11</label>&nbsp;&nbsp;&nbsp;
+                          <label>Lifetime Min : 1</label><br>
+                          <label>Lifetime Mean : 7</label>&nbsp;&nbsp;&nbsp;
+                          <label>No of Tool Change : 4</label>
+                              <div class="table-responsive">
+                                <table class="table align-items-center table-flush">
+                                  <thead class="thead-light">
+                                    <tr>
+                                      <th scope="col">Reason for Tool Change</th>
+                                      <th scope="col">NUmber of Tools Changed</th>
+                                      <th scope="col">% Distribution Tool Change</th>
+                                     </tr>
+                                  </thead>
+                                  <tbody>
+                                    
+                                    <tr>
+                                      <td>
+                                        Change of type/Workpiece
+                                      </td>
+                                      <td>
+                                        1
+                                      </td>
+                                      <td>
+                                        25.0
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          Installation of Test Tool
+                                        </td>
+                                        <td>
+                                          2
+                                        </td>
+                                        <td>
+                                          50.0
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Dimensionally Not Acceptable
+                                          </td>
+                                          <td>
+                                            1
+                                          </td>
+                                          <td>
+                                            25.0
+                                          </td>
+                                        </tr>
+                                  </tbody>
+                                </table>
+                              </div> 
+                          
+                        </div> 
+                        <div class="modal-footer">
+                            <button type="button" data-dismiss="modal" class="btn btn-primary"><!----> <!----> <!----> Ok, Got it</button> 
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="card shadow"> 
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  
+                  <h2 class="mb-0">Mean Tool Lifetime per Second per Station per Machine for Processing time</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <canvas id="tool-per-processing-time" class="chart-canvas"></canvas>
+              </div>
+              <button id="showDetailsBtnProcessingTime" class="btn btn-icon btn-3 btn-primary" data-toggle="modal" data-target="#modalBoxDiv1" type="button">
+                  Show Details
+                </button>
+                <div id="modalBoxDiv1" tabindex="-1" role="dialog"  aria-labelledby="modalBoxDiv1" class="modal fade" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                        <h6 id="modal-title-notification" class="modal-title">Tool Change Details</h6> 
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span>×</span></button>
+                        </div> 
+                        <div class="modal-body"> 
+                          <label>Lifetime Max : 00:06:58 Hr</label>&nbsp;&nbsp;&nbsp;
+                          <label>Lifetime Min : 00:00:18 Hr</label><br>
+                          <label>Lifetime Mean : 00:02:39 Hr</label>&nbsp;&nbsp;&nbsp;
+                          <label>No of Tool Change : 4</label>
+                              <div class="table-responsive table-striped">
+                                <table class="table align-items-center table-flush">
+                                  <thead class="thead-light">
+                                    <tr>
+                                      <th scope="col">Reason for Tool Change</th>
+                                      <th scope="col">NUmber of Tools Changed</th>
+                                      <th scope="col">% Distribution Tool Change</th>
+                                     </tr>
+                                  </thead>
+                                  <tbody>
+                                    
+                                    <tr>
+                                      <td>
+                                        Change of type/Workpiece
+                                      </td>
+                                      <td>
+                                        1
+                                      </td>
+                                      <td>
+                                        25.0
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          Installation of Test Tool
+                                        </td>
+                                        <td>
+                                          2
+                                        </td>
+                                        <td>
+                                          50.0
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                            Dimensionally Not Acceptable
+                                          </td>
+                                          <td>
+                                            1
+                                          </td>
+                                          <td>
+                                            25.0
+                                          </td>
+                                        </tr>
+                                  </tbody>
+                                </table>
+                              </div> 
+                          
+                        </div> 
+                        <div class="modal-footer">
+                          <button type="button" data-dismiss="modal" class="btn btn-primary"><!----> <!----> <!----> Ok, Got it</button> 
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+</div>

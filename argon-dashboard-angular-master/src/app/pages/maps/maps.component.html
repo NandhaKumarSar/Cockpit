@@ -1,0 +1,243 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+        <!-- Card stats -->
+        
+      </div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <div class="container-fluid mt--7">
+    <!-- Table -->
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header bg-transparent">
+            <h3 class="mb-0">General Settings</h3>
+          </div>
+          <div class = "card-body">
+           
+              <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#myTabContent" role="tab" aria-selected="true">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab"  href="#myTabContent2" role="tab" aria-selected="false">Custom Settings</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab"  href="#myTabContent3" role="tab" aria-selected="false">User Profile Settings</a>
+                  </li>
+               </ul> <br>
+               <div class="tab-content"  id="myTabContentssss">
+                  <div id="myTabContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="myTabContent">
+                      <div class="form-group row">
+                          <label for="dbType" class="col-sm-3 col-form-label">Select Language</label>
+                          <div class="col-sm-6">
+                              <select id="monitoringChannel" class="btn btn-secondary">
+                                  <option>English</option>
+                                  <option>German(Deutsch)</option>
+                                  <option>Spanish</option>
+                                  <option>French</option>
+                                  <option>Italian</option>
+                                  <option>Korean</option>
+                          </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-3 col-form-label">UltraVNC Install Directory</label>
+                            <div class="col-sm-6">
+                              <input type="file" class="form-control" id="inputPassword" >
+                            </div>
+                            <div class="col-sm-1">
+                                <button id="browseBtn" class="btn btn-icon btn-3 btn-primary"  type="button">
+                                    Upload
+                                  </button>
+                            </div>
+                          </div>
+                  </div>
+                  <div id="myTabContent2" class="tab-pane fade" role="tabpanel" aria-labelledby="myTabContent2">
+                      <div class="form-group row">
+                          <label for="dbType" class="col-sm-3 col-form-label">Report Frequency</label>
+                          <div class="col-sm-6">
+                              <select id="monitoringChannel" class="btn btn-secondary">
+                                  <option>Daily</option>
+                                  <option>Weekly</option>
+                                  <option>Monthly</option>
+                                  <option>Quarterly</option>
+                                  <option>Half yearly</option>
+                                  <option>Yearly</option>
+                          </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-3 col-form-label">Email Id(s)</label>
+                            <div class="col-sm-6">
+                              <input type="email" class="form-control" id="inputPassword" >
+                            </div>
+                    
+                          </div>
+                      <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                          <input class="custom-control-input" id="customCheck5" type="checkbox">
+                          <label class="custom-control-label" for="customCheck5">Machine Status</label>
+                        </div>
+                        <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                          <input class="custom-control-input" id="customCheck6" type="checkbox" checked="">
+                          <label class="custom-control-label" for="customCheck6">Load Factors</label>
+                        </div>
+                        <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                            <input class="custom-control-input" id="customCheck10" type="checkbox" checked="">
+                            <label class="custom-control-label" for="customCheck10">Production Status</label>
+                          </div>
+                        <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                            <input class="custom-control-input" id="customCheck1" type="checkbox">
+                            <label class="custom-control-label" for="customCheck1">Program Running Times</label>
+                          </div>
+                          <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                              <input class="custom-control-input" id="customCheck2" type="checkbox">
+                              <label class="custom-control-label" for="customCheck2">Tool Usage</label>
+                            </div>
+                            <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                                <input class="custom-control-input" id="customCheck3" type="checkbox">
+                                <label class="custom-control-label" for="customCheck3">Mean Tool Lifetime per Station per Machine for Average</label>
+                              </div>
+                              <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                                  <input class="custom-control-input" id="customCheck4" type="checkbox">
+                                  <label class="custom-control-label" for="customCheck4">Mean Tool Lifetime per Station per Machine for Piece Counter</label>
+                                </div>
+                                <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                                    <input class="custom-control-input" id="customCheck7" type="checkbox">
+                                    <label class="custom-control-label" for="customCheck7">Mean Tool Lifetime per Station per Machine for Processing time</label>
+                                  </div>
+                                  <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                                      <input class="custom-control-input" id="customCheck8" type="checkbox">
+                                      <label class="custom-control-label" for="customCheck8">Distribution of Tool Change Times per Day</label>
+                                    </div>
+                                    <div class="custom-control custom-control-alternative custom-checkbox mb-3">
+                                        <input class="custom-control-input" id="customCheck9" type="checkbox">
+                                        <label class="custom-control-label" for="customCheck9">Tool Change Reason</label>
+                                      </div>
+                                      <div class="form-group row justify-content-center">
+                                      <button id="browseBtn" class="btn btn-icon btn-3 btn-success"  type="button">
+                                          Save
+                                        </button></div>
+                    </div>
+                    <div id="myTabContent3" class="tab-pane fade" role="tabpanel" aria-labelledby="myTabContent3">
+                      <div class="row">
+                        <div class="card shadow col-sm-6">
+                            <div class="card-header bg-transparent">
+                              <h3 class="mb-0">Profile Information</h3>
+                            </div>
+                            <div class = "card-body">
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Username</label>
+                                    <div class="col-sm-6">
+                                      <input type="text" class="form-control" id="inputPassword" value="Soundariya">
+                                    </div>
+                            
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="inputPassword" class="col-sm-3 col-form-label">Email Id</label>
+                                      <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="inputPassword" value="soundariya@ceratizit.com" >
+                                      </div>
+                              
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">Designation</label>
+                                        <div class="col-sm-6">
+                                          <input type="text" class="form-control" id="inputPassword" value="Software Engineer">
+                                        </div>
+                                
+                                      </div>
+
+                                      <div class="form-group row">
+                                          <label for="inputPassword" class="col-sm-4 col-form-label">Profile Picture</label>                             
+                                        </div>
+                                        <div class="form-group row ">
+                                            <div class="media align-items-left">
+                                                <span class="avatar avatar-xl rounded-circle">
+                                                  <img alt="Image placeholder" src="assets/img/theme/team-4-800x800.jpg">
+                                                </span>
+                                              </div>
+                                              <div class="media-body ml-2 d-none d-lg-block align-items-right">
+                                                  <button id="browseBtn" class="btn btn-icon btn-3 btn-success"  type="button">
+                                                      Update
+                                                    </button>
+                                                </div>
+                                            </div>
+                            </div>
+                          </div>
+                          
+                          <div class="card shadow col-sm-6 justify-content-right">
+                              <div class="card-header bg-transparent">
+                                <h3 class="mb-0">Reset Password</h3>
+                              </div>
+                              <div class = "card-body">
+                                  <div class="form-group row">
+                                      <label for="inputPassword" class="col-sm-3 col-form-label">Current Password</label>
+                                      <div class="col-sm-6">
+                                        <input type="password" class="form-control" id="inputPassword">
+                                      </div>
+                              
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label">New Password</label>
+                                        <div class="col-sm-6">
+                                          <input type="password" class="form-control" id="inputPassword" >
+                                        </div>
+                                
+                                      </div>
+                                      <div class="form-group row">
+                                          <label for="inputPassword" class="col-sm-3 col-form-label">Confirm Password</label>
+                                          <div class="col-sm-6">
+                                            <input type="password" class="form-control" id="inputPassword" >
+                                          </div>
+                                  
+                                        </div>
+                                        <div class="form-group row justify-content-center">
+                                        <button id="browseBtn" class="btn btn-icon btn-3 btn-success" >
+                                            Confirm Reset
+                                          </button>
+                                        </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              </div> 
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
